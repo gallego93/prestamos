@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="amount">Valor de abono:</label>
-                                        <input type="number" step="any" min="1" max="{{$credit_data['rest']}}" value="{{$credit_data['payment_quote']}}" name="amount" class="form-control" id="amount">
+                                        <input type="number" step="any" min="2" max="{{$credit_data['rest']}}" value="{{$credit_data['payment_quote']}}" name="amount" class="form-control" id="amount">
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" {{($credit_data['rest']<1) ? 'disabled': ''}} class="btn btn-success btn-block btn-md">Guardar pago</button>
